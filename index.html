@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Singgah Coffee Company</title>
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root
+{
+    --color-primary: #8C670E;
+    --color-secondary: #d50032;
+    --color-extra: #ffffff;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body
+{
+    font-family: 'Poppins' , sans-serif;
+    line-height: 1.4;
+    color: #ffffff;
+    min-height: 2000px;
+}
+
+a
+{
+    color: #8C670E;
+}
+
+ul
+{
+    list-style: none;
+}
+
+p
+{
+    margin: 5px 0;
+    line-height: 1.7;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+/*Navbar */
+
+.navbar
+{
+    width: 100%;
+    height: auto;
+    background-color: #aa7e41;
+    padding: 18px;
+    box-shadow: 0 1px 3px rgb(235, 229, 229),
+    0 2px 2px rgb(255, 255, 255),
+        0 0 2px rgb(255, 255, 255);
+}
+
+.navbar-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul
+{
+    display: flex;
+    align-items: center;
+}
+
+.navbar li
+{
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a
+{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.navbar a:hover
+{
+    color: var(--color-primary);
+}
+
+
+.navbar-brand img
+{
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-nav-left
+{
+    text-transform: uppercase;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.navbar-nav-right li:first-child a
+{
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar-nav-right img
+{
+    height: 50px;
+    width: 50px;
+    margin-right: -10px;
+}
+
+/* Buttons*/
+
+.btn
+{
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    border: 1px #fffbfb solid;
+    border-radius: 50px;
+    padding: 7px 16px;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-dark-outline
+{
+    border-color: #ffffff;
+    color: #000000;
+}
+
+.btn-dark
+{
+    background-color: #ffffff;
+    color: #fff;
+}
+
+.container
+{
+    background-image: url('');
+}
+
+/* Hero Section*/
+
+.hero
+{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    background: linear-gradient(0deg,  rgba(1, 1, 3, 1) 8%, rgba(255,225,225,0) 50%)
+}
+
+.hero .content
+{
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1
+{
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1.2;
+}
+
+.hero .content h1 span
+{
+    color: var(--color-primary);
+}
+
+.hero .content p
+{
+    font-size: 1.6rem;
+    margin-top: 1 rem;
+    line-height: 1.4;
+    font-weight: 100;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.hero .content .cta
+{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--color-primary);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    mix-blend-mode: difference;
+}
+
+/*About Section*/
+.about
+{
+
+    padding: 7rem 7% 1.4rem;
+}
+
+.about h2
+{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.about h2 span
+{
+    color: var(--color-primary);
+}
+
+/*Three image containers (use 25% for four, and 50% for two, etc)*/
+
+.column
+{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/*Clear floats after image containers */
+
+.row::after
+{
+    content: "";
+    Clear: both;
+    display: table;
+}
+
+h3
+{
+    text-align: center;
+}
+
+table,th,td
+{
+    border-collapse: collapse;
+    border: 1px solid #aa7e41;
+}
+
+td
+{
+    text-align: center;
+}
+
+th,td
+{
+    padding: 5px;
+}
+
+body
+{
+    background-color: #000000;
+}
+
+</style>
+
+<body>
+    
+    <!--Navbar Start-->
+       <div class="container"></div>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="image/logo.png" alt="Singgah Coffee"/>
+                </a>
+            </div>
+
+            <ul class="navbar-nav-left">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+                <li>
+                    <a href="menu.html" target="_blank">Menu</a>
+                </li>
+                <li>
+                    <a href="comment review.html" target="_blank">Customer Review</a>
+                </li>
+                <li>
+                    <a href="contact.html" target="_blank">Contact Details</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav-right">
+                <li>
+                    <a href="location.html" target="_blank">
+                        <img src="image/marker black.png" alt="find store">
+                        <span>Find a Store</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Navbar End-->
+
+    <!--Hero Section Start-->
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>Let's Enjoy A Cup <span>Coffee</span></h1>
+            <p> We believe a cup of coffee one of the most important,</p>
+            <p>simple pleasures in life.</p>
+            </main>
+    </section>
+    <!--Hero Section End-->
+
+    <!--About Section Start-->
+    <section id="about" class="about">
+        <h2><span>About</span> Us</h2>
+
+           <div class="row">
+            <div class="column">
+                <img src="image/kopi 1.jpg" alt="Kopilih Bahagia" style="width: 100%;">
+            </div>
+            <div class="column">
+                <img src="image/kopi 2.jpg" alt="Latte sepahit" style="width: 100%;">
+            </div>
+            <div class="column">
+                <img src="image/kopi 3.jpg" alt="Chocolate Sendu" style="width: 100%;">
+            </div>
+           </div>
+           
+           
+            <div class="content">
+                <h3><font color="#aa7e41"> Why Should You Choose Our Coffee?</font></h3>
+                <p>Brands line the grocery store aisles. But Singgah Coffee best strikes a balance between cost and flavor. The company is a little more expensive than names like Singgahsana House,
+                    partially because these brands sell bulk-sized canisters, but customers generally find singgah coffee best to be tastier.
+                   The company makes 10 different ground coffee blends and six different K-Cups for Keurig coffee makers,
+                    all of which are easy to find both in-store and online.</p>
+
+                     <br>
+                 <p>We have are 2 branch, our main branch at Jalan Tun H S Lee, City Centre, 50100, Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur.
+                    Second branch established at Jalan University, Off, Jalan Ilmu, 59100 Kuala Lumpur.</p>
+            </div>
+        </div>
+    </section>
+
+    <p>
+        <table style="width: 100%;" class="center">
+            <tr>
+                <th>Vision</th>
+                <th>Mission</th>
+                <th>Objective</th>
+            </tr>
+
+            <tr>
+                <td>"While our company has grown, we have stayed true to our original vision to be a coffeehouse with good food.
+                    We're on a mission to make people feel good</td>
+                <td>“Our mission as a coffee business is to improve the quality of life for every person in the coffee supply chain, 
+                    from producers to consumers.”</td>
+                <td>“We want the Singgah Café to have some entertainment nights to increase sales, and appeal to a more artistic crowd.”</td>
+            </tr>
+
+        </table>
+    </p>
+
+    <!--About Section End-->
+    
+    <script src="script.js"></script>
+</body>
+</html>
